@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "8194F6EF-5FD1-4FCF-9B92-3CF78FECCD37"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B9164FEF-58A3-445B-926C-27483768B1E5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIPractical/ListView/ViewModel/ListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "fetchListRows()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5E71BC89-7A19-4980-9397-8F2AA42649FE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIPractical/ListView/ViewModel/ListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "ProductListViewModel"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "5E71BC89-7A19-4980-9397-8F2AA42649FE - 56855f5f90eebf82"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of SwiftUIPractical.ProductListViewModel.listRows : Swift.Array&lt;SwiftUIPractical.DetailProductViewModel&gt;"
+                  moduleName = "SwiftUIPractical"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cheharraj/Documents/KinjalPractical/SwiftUIPracticalKinjal/SwiftUIPractical/ListView/ViewModel/ListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "5E71BC89-7A19-4980-9397-8F2AA42649FE - 996e4e69fe22948f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIPractical.ProductListViewModel.listRows.getter : Swift.Array&lt;SwiftUIPractical.DetailProductViewModel&gt;"
+                  moduleName = "SwiftUIPractical"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cheharraj/Documents/KinjalPractical/SwiftUIPracticalKinjal/SwiftUIPractical/ListView/ViewModel/ListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "5E71BC89-7A19-4980-9397-8F2AA42649FE - e40102cd259b4cf3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIPractical.ProductListViewModel.listRows.setter : Swift.Array&lt;SwiftUIPractical.DetailProductViewModel&gt;"
+                  moduleName = "SwiftUIPractical"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cheharraj/Documents/KinjalPractical/SwiftUIPracticalKinjal/SwiftUIPractical/ListView/ViewModel/ListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "126">
+               </Location>
+               <Location
+                  uuid = "5E71BC89-7A19-4980-9397-8F2AA42649FE - 5d3d977ec4a95a80"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIPractical.ProductListViewModel.listRows.modify : Swift.Array&lt;SwiftUIPractical.DetailProductViewModel&gt;"
+                  moduleName = "SwiftUIPractical"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cheharraj/Documents/KinjalPractical/SwiftUIPracticalKinjal/SwiftUIPractical/ListView/ViewModel/ListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "5E71BC89-7A19-4980-9397-8F2AA42649FE - a63ce2c355289a5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIPractical.ProductListViewModel.listRows.modify : Swift.Array&lt;SwiftUIPractical.DetailProductViewModel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "SwiftUIPractical"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cheharraj/Documents/KinjalPractical/SwiftUIPracticalKinjal/SwiftUIPractical/ListView/ViewModel/ListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "5E71BC89-7A19-4980-9397-8F2AA42649FE - a3b5cec423454947"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIPractical.ProductListViewModel.$listRows.getter : Combine.Published&lt;Swift.Array&lt;SwiftUIPractical.DetailProductViewModel&gt;&gt;.Publisher"
+                  moduleName = "SwiftUIPractical"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cheharraj/Documents/KinjalPractical/SwiftUIPracticalKinjal/SwiftUIPractical/ListView/ViewModel/ListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "94">
+               </Location>
+               <Location
+                  uuid = "5E71BC89-7A19-4980-9397-8F2AA42649FE - a3b5cec423454947"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIPractical.ProductListViewModel.$listRows.setter : Combine.Published&lt;Swift.Array&lt;SwiftUIPractical.DetailProductViewModel&gt;&gt;.Publisher"
+                  moduleName = "SwiftUIPractical"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cheharraj/Documents/KinjalPractical/SwiftUIPracticalKinjal/SwiftUIPractical/ListView/ViewModel/ListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "180">
+               </Location>
+               <Location
+                  uuid = "5E71BC89-7A19-4980-9397-8F2AA42649FE - 2cd1cc904e3288a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIPractical.ProductListViewModel.$listRows.modify : Combine.Published&lt;Swift.Array&lt;SwiftUIPractical.DetailProductViewModel&gt;&gt;.Publisher"
+                  moduleName = "SwiftUIPractical"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cheharraj/Documents/KinjalPractical/SwiftUIPracticalKinjal/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "5E71BC89-7A19-4980-9397-8F2AA42649FE - a6d98d7f423e9f18"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIPractical.ProductListViewModel.$listRows.modify : Combine.Published&lt;Swift.Array&lt;SwiftUIPractical.DetailProductViewModel&gt;&gt;.Publisher with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "SwiftUIPractical"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cheharraj/Documents/KinjalPractical/SwiftUIPracticalKinjal/SwiftUIPractical/ListView/ViewModel/ListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "5E71BC89-7A19-4980-9397-8F2AA42649FE - 2ee2ff204d2ffdab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIPractical.ProductListViewModel.init() -&gt; SwiftUIPractical.ProductListViewModel"
+                  moduleName = "SwiftUIPractical"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cheharraj/Documents/KinjalPractical/SwiftUIPracticalKinjal/SwiftUIPractical/ListView/ViewModel/ListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "176">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A0FBF9B5-E54F-4039-A840-844972FD1E71"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIPractical/Services/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "getProducts(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E14A3223-0DB5-4450-974E-ACC2F6822DAB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIPractical/Services/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "getProducts(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E3B248DC-4617-4172-98E7-023E671F4AF6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIPractical/Services/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "getProducts(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C72B5349-99D4-4BCA-B919-4D390B6082E1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIPractical/ListView/ViewModel/ListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "fetchListRows()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2DEBE9C4-163F-4B18-A4A8-4331C2352564"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIPractical/ListView/View/ProductListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "242D3A95-A671-41F6-BF23-649B36C12CDD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIPractical/ListView/View/ProductListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AFD86207-6FCE-485C-B098-CF382E98A57C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIPractical/Views/LoadingView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
