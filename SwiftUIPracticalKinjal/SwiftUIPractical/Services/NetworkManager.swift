@@ -6,34 +6,65 @@
 //
 
 import Foundation
+import SwiftUI
 
-class NetworkManager {
-   
-    static let shared = NetworkManager()
-    
-    private init() {}
-    
-    func getProducts(completion : @escaping ((RootProduct?) -> Void)) {
-        guard let url = URL(string: UrlConstants.productListUrl) else {
-            fatalError("URL is not correct")
+struct APIService: APIServiceProtocol {
+    func fetchProductList(url: URL?, completion: @escaping (Result<RootProduct, APIError>) -> Void) {
+        guard let url = url else {
+            let error = APIError.badURL
+            completion(Result<RootProduct, APIError>.failure(error))
+            return
         }
-        
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            guard let response = response as? HTTPURLResponse, let data = data else { return }
-            print(response)
-            if response.statusCode == 200 {
+        let task = URLSession.shared.dataTask(with: url) {(data , response, error) in
+            
+            if let error = error as? URLError {
+                completion(Result.failure(APIError.url(error)))
+            }else if  let response = response as? HTTPURLResponse, !(200...299).contains(response.statusCode) {
+                completion(Result.failure(APIError.badResponse(statusCode: response.statusCode)))
+            }else if let data = data {
                 let decoder = JSONDecoder()
-                let result = try? decoder.decode(RootProduct.self, from: data)
-                DispatchQueue.main.async {
-                    completion(result)
+                do {
+                    let breeds = try decoder.decode(RootProduct.self, from: data)
+                    completion(Result.success(breeds))
+                    
+                }catch {
+                    completion(Result.failure(APIError.parsing(error as? DecodingError)))
                 }
-            } else {
-                print("ERROR: \(data), HTTP Status: \(response.statusCode)")
+
             }
-        }.resume()
-        
+        }
+
+        task.resume()
+     }
+    
+    
+    
+    func fetch<T: Decodable>(_ type: T.Type, url: URL?, completion: @escaping(Result<T,APIError>) -> Void) {
+        guard let url = url else {
+            let error = APIError.badURL
+            completion(Result.failure(error))
+            return
+        }
+        let task = URLSession.shared.dataTask(with: url) {(data , response, error) in
+            
+            if let error = error as? URLError {
+                completion(Result.failure(APIError.url(error)))
+            }else if  let response = response as? HTTPURLResponse, !(200...299).contains(response.statusCode) {
+                completion(Result.failure(APIError.badResponse(statusCode: response.statusCode)))
+            }else if let data = data {
+                let decoder = JSONDecoder()
+                do {
+                    let result = try decoder.decode(type, from: data)
+                    completion(Result.success(result))
+                    
+                }catch {
+                    completion(Result.failure(APIError.parsing(error as? DecodingError)))
+                }
+
+            }
+        }
+
+        task.resume()
     }
+    
 }
-    
-    
-  

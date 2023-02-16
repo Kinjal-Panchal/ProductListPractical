@@ -7,28 +7,55 @@
 
 import Foundation
 
-protocol ProductListViewModelProtocol {
-    var listRows: [DetailProductViewModel] { get }
-    func fetchListRows()
-}
-
-class ProductListViewModel: ProductListViewModelProtocol, ObservableObject {
+class ProductListViewModel: ObservableObject {
     
-    @Published private var isLoading = false
-    @Published var listRows = [DetailProductViewModel]()
-
-     func fetchListRows() {
-         isLoading = true
-         NetworkManager.shared.getProducts { [weak self] result in
-            self?.isLoading = false
-            guard let data = result?.products else {
-                return
+    @Published var productList = [Product]()
+    @Published var isLoading: Bool = false
+    @Published var errorMessage: String? = nil
+    
+    let service: APIServiceProtocol
+    
+    init(service: APIServiceProtocol = APIService()) {
+        self.service = service
+        fetchProductList()
+    }
+    
+    func fetchProductList() {
+        
+        isLoading = true
+        errorMessage = nil
+        
+        let url = URL(string: UrlConstants.productListUrl)
+        service.fetchProductList(url: url) { [unowned self] result in
+            DispatchQueue.main.async {
+                
+                self.isLoading = false
+                switch result {
+                case .failure(let error):
+                    self.errorMessage = error.localizedDescription
+                    // print(error.description)
+                    print(error)
+                case .success(let products):
+                    guard let objproduct = products.products else { return }
+                    self.productList = objproduct
+                }
             }
-            data.forEach { [weak self] product in
-                let detailViewModel = DetailProductViewModel(product: product)
-                    self?.listRows.append(detailViewModel)
-            }
-           
         }
+    }
+    
+    
+    //MARK: preview helpers
+    
+    static func errorState() -> ProductListViewModel {
+        let fetcher = ProductListViewModel()
+        fetcher.errorMessage = APIError.url(URLError.init(.notConnectedToInternet)).localizedDescription
+        return fetcher
+    }
+    
+    static func successState() -> ProductListViewModel {
+        let fetcher = ProductListViewModel()
+        fetcher.productList = [Product.getProduct(),Product.getProduct()]
+
+        return fetcher
     }
 }

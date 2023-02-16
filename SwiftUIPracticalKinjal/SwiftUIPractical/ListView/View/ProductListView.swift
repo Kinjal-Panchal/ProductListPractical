@@ -9,33 +9,27 @@ import SwiftUI
 
 struct ProductListView: View {
     
-    @StateObject private var viewModel = ProductListViewModel()
-    @State var isLoading = false
+    let productlist: [Product]
     
     var body: some View {
-        NavigationStack{
-            
-            List(viewModel.listRows, id: \.name) { detailProductView in
-                NavigationLink(destination: DetailProductView(viewModel: detailProductView)) {
-                    ProductRowView(viewModel: detailProductView)
+        if #available(iOS 16.0, *) {
+            NavigationStack{
+                
+                List(productlist, id: \.id) { product in
+                    NavigationLink(destination: DetailProductView(product: product, detailProductVM: DetailProductViewModel(product: Product.getProduct()))) {
+                        ProductRowView(viewModel: product)
+                    }
                 }
+                .listStyle(PlainListStyle())
+                .navigationTitle("ProductList")
             }
-                    .listStyle(PlainListStyle())
-                    
-                    .navigationTitle("ProductList")
-        }.onAppear {
-            viewModel.fetchListRows()
         }
-        if isLoading {
-            LoadingView()
-        }
-        
-    }
+       }
     }
 
 
 struct ProductListView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductListView()
+        ProductListView(productlist: ProductListViewModel.successState().productList)
     }
 }

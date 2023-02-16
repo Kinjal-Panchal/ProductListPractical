@@ -9,31 +9,29 @@ import SwiftUI
 
 struct ProductRowView: View {
     
-    let viewModel: DetailProductViewModel
-
+    let viewModel: Product
+    
     var body: some View {
         HStack(spacing: 20) {
-            ImageProductView(imageData: viewModel.imageData,
-                             imageSize: CGSize(width: 100, height: 80),
-                             radius: 0).overlay{
-                VStack {
-                    FavoriteButton(isFavorite: viewModel.isFavorite) {
-                        viewModel.didTapFavoriteButton()
-                    }.padding(.top, 50).padding(.leading, 80)
-                }
+            if viewModel.imageURL != "" {
+                ImageProductView(urlString: viewModel.imageURL ?? "", imageSize: CGSize(width: 80, height: 80), radius: 10)
             }
+//            FavoriteButton(isFavorite: viewModel.isFavorite ?? false) {
+//                viewModel.isFavorite?.toggle()
+//                DataManager.shared.setFavoriteStatus(productTitle: viewModel.title ?? "", status: viewModel.isFavorite ?? false)
+//            }
             VStack(alignment: .leading, spacing: 5) {
-                Text(viewModel.name).font(.system(size: 12, weight: .bold))
-                Text(viewModel.price).font(.system(size: 10, weight: .bold))
+                Text(viewModel.title ?? "").font(.system(size: 12, weight: .bold))
+                Text("\(viewModel.price?.first?.value ?? 0.0)").font(.system(size: 10, weight: .bold))
             }
             
-            
+           }
         }
     }
-}
+
 
 struct ProductRowView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductRowView(viewModel: DetailProductViewModel(product: Product.getProduct()))
+        ProductRowView(viewModel: Product.getProduct())
     }
 }

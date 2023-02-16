@@ -22,6 +22,7 @@ struct ContentView: View {
         
     }
     
+    @StateObject var listviewModel = ProductListViewModel()
     @State var selectedIndex = 0
     @State var shouldShowModel = false
    // var home_tab_RootView = HomeView()
@@ -44,11 +45,19 @@ struct ContentView: View {
             switch selectedIndex {
             case 0:
                 NavigationView {
-                    ProductListView()
+                    if listviewModel.isLoading {
+                        LoadingView()
+                    }else {
+                        ProductListView(productlist: listviewModel.productList)
+                    }
                 }
             case 1:
                 NavigationView {
-                    ProductListView()
+                    if listviewModel.isLoading {
+                        LoadingView()
+                    }else {
+                        ProductListView(productlist: listviewModel.productList)
+                    }
                 }
             default :
                 Text("test")
